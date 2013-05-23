@@ -1,0 +1,77 @@
+/* CSS Document */
+
+@media screen and (min-width: 960px) {
+	
+#site-header{
+	background-image: url(../images/header_bg.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 86px;
+	width: 1000px;
+	margin-top: auto;
+}
+
+#branding {
+	margin-left: 0px !important;
+}
+
+#site-menu {
+	margin-top: 4.4em;
+	margin-left: 4.5em;
+}
+
+#site-menu a:link,
+#site-menu .active,
+#site-menu a:visited{
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+#search-box {
+	margin-top: -29px;
+	margin-right: -10px;
+}
+
+#search-box .form-text {
+	border: none !important;
+	background-image: url(../images/search_bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 177px;
+	height: 21px;
+	color: #000;
+	font-size: 0.9em;
+}
+
+#block-menu-menu-top-menu{
+	margin-top: -73px;
+	float: right;
+	margin-right: -506px;
+	}
+
+#block-menu-menu-top-menu ul,
+#block-menu-menu-top-menu li.leaf{
+	list-style-image: none !important;
+	list-style-type: none;
+	display: inline;
+}
+
+#block-menu-menu-top-menu ul il{
+	display: inline;
+}
+
+#block-menu-menu-top-menu a,
+#block-menu-menu-top-menu a:visited{
+	text-transform: uppercase;
+	color: #fec9a5 !important; 
+	text-decoration: none;
+	font-size: 1em;
+}
+
+#block-menu-menu-top-menu a:hover{
+	color: #ffddbb !important;
+}
+
+}

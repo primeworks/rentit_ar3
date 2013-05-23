@@ -1,0 +1,109 @@
+/* CSS Document */
+
+/*CSS formatted for Mobile devices with 320px resolution*/
+
+@media screen and (max-width: 320px) {
+
+/*Hidden Blocks and elements*/
+
+#admin-menu-wrapper,
+.main-menu,
+#header-last > #block-menu-menu-top-menu,
+.error,
+#branding img,
+#header-regions,
+#site-menu, 
+#internal-nav,
+.messages,
+#block-views-top_banner_slideshow-block_1,
+#block-area_banner-0 img,
+#block-views-uc_products_tab-block_1,
+#block-menu-menu-package-options,
+#block-views-three_steps-block_1,
+.view-payment-options,
+#block-menu-menu-features-menus,
+#block-menu-menu-payment-options-menu,
+#block-menu-menu-rent-a-site-menu,
+#block-jasm-0/*,
+#postscript-wrapper*/{
+	display: none !important;
+}
+
+/*End of Hidden elements*/
+
+
+/*Logo and Header styles*/
+
+#branding a{
+	background-color: #F00;
+	display: block;
+	height: 70px;
+	width: 320px;
+	background-image: url(../images/mobile/site-logo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+}
+#site-header,
+body.admin-menu,
+#main-content-container,
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16  {
+	margin: 0px !important;
+	padding: 0px !important;
+	width: 100% !important;
+}
+
+
+
+/*Container definitions*/
+
+.container-24 .grid-12,
+.container-24 .grid-4,
+.container-12, .container-16, .container-24,
+.grid-12, .container-16 .grid-16,
+.container-24 .grid-24{
+	width: 320px !important;
+}
+
+#block-area_banner-0{
+	background-image: url(../images/mobile/home-page-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 121px;
+	width: 320px;
+	display: block;
+}
+
+#footer-wrapper{
+	background-image: url(../images/mobile/footer-bg.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	margin: 0px;
+	height: 64px;
+	width: 300px !important;
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	color: #FFF;
+}
+
+#footer-first, #footer-last {
+margin-bottom: 0;
+font-size: 11px;
+width: 300px !important;
+}
+
+#footer-wrapper a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer-wrapper a:hover{
+	text-decoration: underline;
+}
+
+
+
+}
