@@ -95,7 +95,7 @@ input:focus, textarea:focus {
 }
 
 input, textarea{
-	color: #959595;	
+	color: #4d4d4d;	
 }
 
 /*Glow on focus for all input fields END*/
@@ -327,11 +327,12 @@ margin-left: -25px;
 }
 
 .field-field-order-form fieldset {
-height: 250px;
+/*height: 250px;*/
 border: none !important;
 background-color: #EBEBEB;
 padding-left: 408px;
 padding-top:20px;
+padding-bottom: 20px;
 }
 
 .field-field-order-form label {
@@ -650,6 +651,10 @@ margin-bottom: 4px;
 	
 }
 
+.multiline{
+	display:none;
+}
+
 /*Styles for the Pricing page END*/
 
 .front #main-content{
@@ -662,6 +667,15 @@ margin-bottom: 4px;
 .view-three-steps a {
 text-decoration: none;
 color: #464646;
+position: absolute;
+display: block;
+width: 244px;
+padding-top: 146px;
+margin-top: -138px;
+padding-left: 42px;
+height: 67px;
+margin-left: -46px;
+padding-right: 40px;
 }
 
 /*.node, */.not-front #main-content{
@@ -877,9 +891,7 @@ width:1000px;
 	width:1000px;
 }
 
-.error{
-	display: none;
-}
+
 
 #internal-nav {
 	margin-top: 0px;
@@ -948,7 +960,7 @@ margin-left: 10px;
 	/*margin-bottom: 64px;*/
 	margin-left: 8px;
 	display: inline-table;
-	z-index: 10000;
+	z-index: 10;
 }
 
 #block-views-uc_products_tab-block_1 .views-row div:nth-child(even) {background: #f7f7f7;}
@@ -1139,7 +1151,13 @@ margin-left: 10px;
 /*Modal Login and Registration Style*/
 
 
-#user-login .description{
+#modalContent .error{
+	/*display: none;*/
+	width: 362px;
+	padding: 4px;
+}
+
+#modalContent #user-login .description{
 	display:none;
 }
 .popups-container {
@@ -1152,7 +1170,7 @@ margin-left: 10px;
 }
 
 /*Look here if it affects login or reg form*/
-#user-login #edit-name-wrapper {
+#modalContent #user-login #edit-name-wrapper {
     margin-left: 14px;
 }
 div.modal-forms-modal-content label {
@@ -1162,23 +1180,23 @@ div.modal-forms-modal-content label {
 	color: #959595;
 	margin-bottom:10px;
 }
-#edit-pass-wrapper {
+#modalContent #edit-pass-wrapper {
     margin-left: 14px;
 }
 div.modal-forms-modal-content .description {
     /*display: none;*/
 	color:#959595 !important;
 }
-#user-login #edit-name {
+#modalContent #user-login #edit-name {
     width: 205px;
 	padding-left: 97px;  
-	color: #959595;  
+	color: #4d4d4d;  
 }
 
-#user-login #edit-pass {
+#modalContent #user-login #edit-pass {
     width: 205px;
 	padding-left: 97px; 
-	color: #959595;   
+	color: #4d4d4d;   
 }
 div.modal-forms-modal-content .first {
 	width: 120px;
@@ -1227,22 +1245,22 @@ div.modal-forms-modal-content #edit-submit {
 	cursor: pointer;	
 }
 
-#user-pass {
+#modalContent #user-pass {
 width: 400px;
 }
 
-#user-pass #edit-name{
+#modalContent #user-pass #edit-name{
 	width: 252px;
 	padding-left: 3px;
 	color: #959595;
 }
 
-#user-pass label {
+#modalContent #user-pass label {
 position: relative;
 }
 
 
-#user-pass #edit-submit {
+#modalContent #user-pass #edit-submit {
 	margin-left: 110px;
 	width: 56px;
 	font-size: 0px;
@@ -1256,7 +1274,10 @@ position: relative;
 }
 
 .ctools-modal-content.modal-forms-modal-content {
-    height: 324px !important;
+    height: auto !important;
+	position: absolute;
+	top: -460px;
+	left: -266px;
 }
 
 
@@ -1325,7 +1346,7 @@ margin-bottom: 20px;
 height: auto !important;
 }
 
-#user-register {
+#modalContent #user-register {
 	color: #959595;
 	text-shadow: #fff 0px 1px 0px;
 	-webkit-text-shadow: #fff 0px 1px 0px;
@@ -1348,7 +1369,7 @@ height: auto !important;
 	cursor: pointer;
 }
 
-#user-login {
+#modalContent #user-login {
 	background-image: url(../images/modal-login-background.png);
 	background-repeat: no-repeat;
 	background-position: -1px center;
@@ -1359,30 +1380,37 @@ height: auto !important;
 	margin-top: 0px !important;
 }
 
-#edit-captcha-response-wrapper label {
+#modalContent #edit-captcha-response-wrapper label {
 /*display: none;*/
 }
 
 
-#user-register label {
+#modalContent #user-register label {
     position: relative;
 }
-#user-register input {
+#modalContent #user-register input {
     width: 300px;
     padding-left: 5px;
     position: relative;
     left: 1px;
     margin: 0px;
+	color:#4d4d4d !important;
 }
-#user-register .form-item {
+
+#modalContent #user-register input.form-checkbox {
+width: auto !important;
+}
+
+
+#modalContent #user-register .form-item {
     margin: 0px;
 }
-#user-register .field-prefix {
+#modalContent #user-register .field-prefix {
     float: left;
     position: relative;
     margin-right: 9px;
 }
-#edit-captcha-response {
+#modalContent #edit-captcha-response {
     width: 238px !important;
     margin-left: 17px;
     position: relative;
